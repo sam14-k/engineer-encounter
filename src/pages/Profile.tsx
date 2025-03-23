@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/layout/Navbar";
 import BlurredCard from "@/components/ui/BlurredCard";
 import { Button } from "@/components/ui/button";
@@ -16,7 +15,7 @@ import {
   Clock,
   Download,
   ExternalLink,
-  GitHub,
+  Github,
   Globe,
   Linkedin,
   Mail,
@@ -269,7 +268,7 @@ const Profile = () => {
                     </Button>
                     <div className="flex items-center gap-2">
                       <Button size="sm" variant="ghost" className="rounded-full p-2 h-9 w-9">
-                        <GitHub className="h-4 w-4" />
+                        <Github className="h-4 w-4" />
                       </Button>
                       <Button size="sm" variant="ghost" className="rounded-full p-2 h-9 w-9">
                         <Linkedin className="h-4 w-4" />
@@ -296,7 +295,7 @@ const Profile = () => {
                 
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
-                    <BrainCircuit className="h-5 w-5 text-primary" />
+                    <Star className="h-5 w-5 text-primary" />
                     <div>
                       <p className="text-sm font-medium">AI Match</p>
                       <p className="font-bold text-primary">{engineer.matchPercentage}%</p>
@@ -323,7 +322,7 @@ const Profile = () => {
                   <span className="md:inline">Experience</span>
                 </TabsTrigger>
                 <TabsTrigger value="projects" className="py-3">
-                  <Code className="h-4 w-4 mr-2 md:mr-0 md:hidden" />
+                  <Star className="h-4 w-4 mr-2 md:mr-0 md:hidden" />
                   <span className="md:inline">Projects</span>
                 </TabsTrigger>
                 <TabsTrigger value="reviews" className="py-3">
