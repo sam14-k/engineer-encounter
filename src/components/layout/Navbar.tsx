@@ -10,7 +10,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { BrainCircuit, Briefcase, Search, User } from "lucide-react";
+import { BrainCircuit, Briefcase, Search, Star, User } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
@@ -35,7 +35,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "py-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm"
+          ? "py-3 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm"
           : "py-5 bg-transparent"
       )}
     >
@@ -44,7 +44,7 @@ const Navbar = () => {
           to="/" 
           className="flex items-center gap-2 text-xl font-semibold"
         >
-          <BrainCircuit className="h-6 w-6 text-primary" />
+          <Star className="h-6 w-6 text-primary" />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
             FoundYou
           </span>
